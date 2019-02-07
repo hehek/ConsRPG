@@ -8,8 +8,8 @@ namespace ConsoleRPG
 {
     public abstract class Character
     {
-        string name;
-        WeaponBehavior weapon;
+        public string name;
+        public WeaponBehavior weapon;
 
         public abstract void display();    
         public void Attac()
@@ -22,5 +22,62 @@ namespace ConsoleRPG
         }
     }
        
+    public class Knight: Character
+    {
+        public Knight()
+        {
+            name = "Knight";
+            weapon = new SwardBehavior();
+        }
+
+        public override void display()
+        {
+            Console.WriteLine("{0}" , name);
+            weapon.Attac();
+        }
+    }
+
+    public class Knight : Character
+    {
+        public Knight()
+        {
+            name = "Knight";
+            weapon = new SwardBehavior();
+        }
+
+        public override void display()
+        {
+            Console.WriteLine("{0}", name);
+            weapon.Attac();
+        }
+    }
+    public class Archer : Character
+    {
+        public Archer()
+        {
+            name = "Archer";
+            weapon = new BowBehavior();
+        }
+
+        public override void display()
+        {
+            Console.WriteLine("{0}", name);
+            weapon.Attac();
+        }
+    }
+    public class Warlock : Character
+    {
+        public Warlock()
+        {
+            name = "Warlock";
+            weapon = new WandBehavior();
+        }
+
+        public override void display()
+        {
+            Console.WriteLine("{0}", name);
+            weapon.Attac();
+        }
+    }
 
 }

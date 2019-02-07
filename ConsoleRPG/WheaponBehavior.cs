@@ -35,7 +35,7 @@ namespace ConsoleRPG
         }
     }
 
-    class StickBehavior : WeaponBehavior
+    class WandBehavior : WeaponBehavior
     {
         int maxDamage = 60;
         int minDamage = 5;
