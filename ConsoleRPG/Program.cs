@@ -10,6 +10,16 @@ namespace ConsoleRPG
     {
         static void Main(string[] args)
         {
+            Character knight = new Knight();
+            Character archer = new Archer();
+            Character warlock = new Warlock();
+
+            knight.display();
+            archer.display();
+            warlock.display();
+
+            Console.ReadKey();
+
         }
     }
 }

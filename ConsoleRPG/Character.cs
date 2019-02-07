@@ -12,10 +12,7 @@ namespace ConsoleRPG
         public WeaponBehavior weapon;
 
         public abstract void display();    
-        public void Attac()
-        {
-            weapon.Attac();
-        }     
+             
         public void setWeapon(WeaponBehavior weapon)
         {
             this.weapon = weapon;
@@ -37,20 +34,6 @@ namespace ConsoleRPG
         }
     }
 
-    public class Knight : Character
-    {
-        public Knight()
-        {
-            name = "Knight";
-            weapon = new SwardBehavior();
-        }
-
-        public override void display()
-        {
-            Console.WriteLine("{0}", name);
-            weapon.Attac();
-        }
-    }
     public class Archer : Character
     {
         public Archer()
